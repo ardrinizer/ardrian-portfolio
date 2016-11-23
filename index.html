@@ -393,6 +393,14 @@
             </div>
         </div>
     </footer>
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="fa fa-chevron-up"></span></a>
+
+    <!-- child of the body tag -->
+<span id="top-link-block" class="hidden">
+    <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+    </a>
+</span><!-- /top-link-block -->
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
     <!-- Portfolio Modal 1 -->
@@ -649,7 +657,7 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">Credits and Reference</h4> </div>
-                <div class="modal-body"> 
+                <div class="modal-body">
                     <h5><i class="fa fa-check"></i>bootstrap</h5>
                     <h5><i class="fa fa-check"></i>jquery</h5>
                     <h5><i class="fa fa-check"></i>font awesome</h5>
@@ -657,8 +665,7 @@
                     <h5><i class="fa fa-check"></i>Normalize css</h5>
                     <h5><i class="fa fa-check"></i>Modernizr</h5>
                     <h5><i class="fa fa-check"></i>parallax js</h5>
-                    <h5><i class="fa fa-check"></i>Agency Template</h5>
-                </div>
+                    <h5><i class="fa fa-check"></i>Agency Template</h5> </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                 </div>
@@ -668,7 +675,7 @@
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <!-- Main -->
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
     <!-- Parallax -->
     <script src="js/parallax.js"></script>
     <!-- Bootstrap Core JavaScript -->
@@ -679,7 +686,6 @@
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
     <!-- Theme JavaScript -->
-    <script src="js/main.min.js"></script>
     <script src="js/plugins.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
